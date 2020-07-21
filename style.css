@@ -1,0 +1,93 @@
+/*pokemon challenge
+create webpage with fav pokemon and color scheme in the design of said pokemon
+must include an image, description, and choose a career pokemon would be funny input
+try using the gradient css to assist*/
+
+
+/*
+brown color is rgb(169,148,121)
+green color is rgb(45,131,92)
+*/
+
+
+body{
+    background-image:url("images/background.png");
+    background-size:cover;
+  }
+  
+  header h1{
+    font-family:fantasy;
+    color:rgb(42,43,45); /*inside trunk color of pokemon*/
+    margin-right:auto;
+    margin-left:auto;
+  
+    text-align:center;
+  }
+  
+  .wrapper{
+    width:350px;
+   }
+  
+  nav a{
+    text-decoration:none;
+    margin-right:50px;
+    font-family:'Trebuchet MS';
+    color:rgb(42,43,45);
+  }
+  
+  .textedit{/*for <p> text anywhere on the page*/
+    background-color:rgb(169,148,121);
+    /*display:inline;/*block*/
+    color:#000;
+    font-size:14px;
+    padding:5px 5px;
+    border:1px solid #000;
+    border-radius:10px;
+    overflow-wrap:normal;/*anywhere*/
+  }
+  
+  header nav{
+    text-align:center;
+    font-size:18px;
+    margin-right:auto;
+    margin-left:auto;
+    border:10px outset rgb(45,131,92);
+    border-radius:10px;
+    background-color:rgb(169,148,121);
+  }
+  header img{/*just the header img*/
+    display:block;
+    margin-left:5px; 
+    margin-top:25px;
+    width:100%;
+    
+  }
+  img{
+    display:block;
+    margin-left:auto;
+    width:100%;
+  }
+  
+  
+  .flexcol{/*used to orgainze different items together in column*/
+  display:flex;
+  flex-direction:column;
+  }
+  .flexrow{
+    display:flex;
+    flex-direction:row;
+  }
+  .itemflex{
+    flex:1;
+    margin:10px;
+    
+  }
+  
+  @media all and (min-width:800px){
+    section, h1{
+      padding:0 10%;
+    }
+    .group {
+      flex-direction:column;
+    }
+  }
